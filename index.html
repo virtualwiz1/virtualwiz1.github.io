@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no" />
+    <title>Virtual Wiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="https://kit.fontawesome.com/5a2a2b34e9.js" crossorigin="anonymous"></script>
+
+
+    <meta name="theme-color" content="#8754ff" />
+</head>
+
+<body>
+    <main>
+        <div class="desktop">
+            <div class="desktop-row">
+                <div class="desktop-elements">
+                    <div id="about" class="desktop-element">
+                        <img class="desktop-icon" src="./assets/img/desktop/profile.png">
+                        <span class="desktop-icon-name">About Me</span>
+                    </div>
+                    <div id="skills" class="desktop-element">
+                        <img class="desktop-icon" src="./assets/img/desktop/skills.png">
+                        <span class="desktop-icon-name">My Skills</span>
+                    </div>
+                    <div id="projects" class="desktop-element">
+                        <img class="desktop-icon" src="./assets/img/desktop/projects.png">
+                        <span class="desktop-icon-name">My Projects</span>
+                    </div>
+                    <div id="contact" class="desktop-element">
+                        <img class="desktop-icon" src="./assets/img/desktop/contact.png">
+                        <span class="desktop-icon-name">Contact Me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="taskbar taskbar-left">
+            <div class="row">
+                <div class="column start-menu-section">
+                    <a id="start-menu-icon"><i class="fab fa-windows"></i></a>
+                    <div class="start-menu-elements">
+                        <div class="start-col start-left">
+                            <ul>
+                                <li id="start-left-title">START</li>
+                                <li><i class="my-profile"></i></li>
+                                <li><a onclick="window.open('mailto:virtualwiz401@gmail.com', '_blank')"><i
+                                            class="fas fa-envelope-open-text"></i></a></li>
+                                <li><a onclick="window.open('https://gist.github.com/virtualwiz1', '_blank')"><i
+                                            class="fab fa-github-alt"></i></a></li>
+                                <li><a onclick="window.open('https://www.facebook.com/wiz.virtual/', '_blank')"><i
+                                            class="fab fa-facebook"></i></a></li>
+                                <li><a onclick="window.open('https://github.com/virtualwiz1/', '_blank')"><i
+                                            class="fab fa-github"></i></a></li>
+                                <li><a id="powerOff"><i class="fas fa-power-off"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="start-col start-right">
+                            <ul>
+                                <li id="start-right-title"><small>Helpful Resources</small></li>
+                                <li><a onclick="window.open('https://www.facebook.com/groups/itsnporg', '_blank')">It Students of Nepal</a></li>
+                                <li><a onclick="window.open('https://www.facebook.com/TheOppsTeam', '_blank')">The Opps</a></li>
+                                <li><a onclick="window.open('https://www.facebook.com/groups/pentesternepal', '_blank')">Pentester Nepal</a></li>
+                                <li><a onclick="window.open('https://www.w3schools.com/', '_blank')">W3Schools</a></li>
+                                <li><a onclick="window.open('https://ieeexplore.ieee.org/', '_blank')">IEEE Xplore</a>
+                                </li>
+                                <li><a onclick="window.open('https://portswigger.net/web-security', '_blank')">PortSwigger
+                                        Web Security Academy</a></li>
+                                <li><a onclick="window.open('https://www.hackthebox.eu/', '_blank')">Hack The Box</a>
+                                </li>
+                                <li><a onclick="window.open('https://tryhackme.com/', '_blank')">TryHackMe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <a
+                        onclick="window.open('https://www.google.com/search', '_blank')"><i
+                            class="fas fa-search fa-flip-horizontal"></i></a>
+                </div>
+                <div class="column">
+                    <a id="text-editor"><i class="fas fa-laptop-code" style="color:#ffffff"></i></a>
+                </div>
+                <div class="column">
+                    <a id="terminal"><i class="fas fa-terminal" style="background-color: #2b2424;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="taskbar taskbar-right">
+            <div class="row">
+                <div class="column up-arrow-section">
+                    <a id="up-arrow"><i class="fas fa-chevron-up"></i></a>
+                    <div class="up-arrow-elements">
+                        <div><a onclick="window.open('https://www.facebook.com/wiz.virtual', '_blank')"><i
+                                    class="fab fa-facebook"></i></a></div>
+                        <div><a onclick="window.open('https://twitter.com/virtualwiz1', '_blank')"><i
+                                    class="fab fa-twitter"></i></a></div>
+                        <div><a onclick="window.open('https://github.com/virtualwiz1/', '_blank')"><i
+                                    class="fab fa-github"></i></a></div>
+                        <div><a onclick="window.open('https://t.me/virtualwiz1', '_blank')"><i
+                                    class="fab fa-telegram"></i></a></div>
+                        <div><a onclick="window.open('https://www.instagram.com/wizvirtual/', '_blank')"><i
+                                    class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <a onclick="">
+                        <span id="current-timestamp">
+                            <span id="current-time"></span>
+                            <span id="current-date"></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="column">
+                    <a onclick="minimizeAllWindows()" id="grip"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="elements">
+        <div class="about">
+            <h3 class="elements-heading">Introduction:</h3>
+            <p>Hi! I am <strong>Virtual Wiz</strong>.<br>I am a Tech Enthusiastic, web and mobile developer, programmer
+                and also Cyber Security enthusiast from Nepal.<br>
+            <hr size=1>
+            <span>Web/Mobile Development and Web/Network Penetration Testing enthusiast with an experience of over
+                2 years in the field of Technology, with deep enthusiasm towards Development, Security, Networking and Programming.</span>
+            <hr size=1>
+            <h3 class="elements-heading">Personal Information:</h3>
+            <p>
+                <strong>🚀 Age</strong>: Twenty (20)<br>
+                <strong>🚀 Birthday</strong>: June 24, 2002<br>
+                <strong>🚀 Hobbies</strong>: Reading research papers and blogs, documentations and RFCs; playing CTFs; building knowledge
+                ; developing Mobile apps; and contributing to <strong><a
+                        onclick="window.open('https://www.askmitra.com', '_blank')">Ask
+                        Mitra</a></strong>, a Technology community, as a Community Moderator!
+            </p>
+            <hr size=1>
+            <h3 class="elements-heading">Professional Information:</h3>
+            <p>
+                <strong>🚀 Company</strong>: None currently! I am open to exploring new opportunities.<br>
+                <strong>🚀 Find My Résumé Here!</strong> <a
+                    onclick="window.open('', '_blank')">Virtual Wiz RESUME</a>
+            </p>
+        </div>
+        <div class="skills">
+            <ul>
+                <li>Web programming with HTML5, CSS3, JavaScript, PHP and MySQL,</li>
+                <li>Mobile development with Flutter and Dart,</li>
+                <li>React Js and React native,</li>
+                <li>Graphics Design</li>
+                <li>Web application and Network penetration testing,</li>
+                <li>Linux/UNIX (RedHat, Debian, Fedora),</li>
+                <li>Scripting in Bash, Batch, PowerShell and Python,</li>
+                <li>Programming in C, C++ and C#,</li>
+                <li>Git Version Control Systems,</li>
+                <li>Cryptography,</li>
+                <li>Digital Forensics and Incident Response,</li>
+                <li>Intelligence Gathering and Reconnaissance,</li>
+                <li>Reverse Engineering.</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <ul>
+                <li>
+                    <strong>Mini Js projects</strong> - <a
+                        onclick="window.open('https://github.com/virtualwiz1/js-projects', '_blank')">GitHub</a>
+                    <ul type="square">
+                        <li>Collection of Mini JS Projects</li>
+                        <li>Built on Vanilla JS!</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>CSS Projects</strong> - <a
+                        onclick="window.open('https://github.com/virtualwiz1/30day-css-art', '_blank')">GitHub</a>
+                    <ul type="square">
+                        <li>Art done only using CSS</li>
+                        <li>Collection of CSS arts!</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Figma</strong> - <a
+                        onclick="window.open('https://github.com/virtualwiz1/learning-figma', '_blank')">GitHub</a>
+                    <ul type="square">
+                        <li>Figma art</li>
+                        <li>Mockups for mobile and web</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Adobe Illustrator</strong> - <a
+                        onclick="window.open('https://github.com/virtualwiz1/learning-illustrator', '_blank')">GitHub</a>
+                    <ul type="square">
+                        <li>Art done in Illustrator</li>
+                        <li>Using Pen tool</li>
+                    </ul>
+                </li>
+                <li>Plus, many more! Find the public repositories on <a
+                        onclick="window.open('https://github.com/virtualwiz1', '_blank')">GitHub</a>!</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3 class="elements-heading">Reach out to me!</h3>
+            <p>
+                <strong>E-mail</strong>: <a
+                    onclick="window.open('mailto:virtualwiz401@gmail.com', '_blank')">virtualwiz401@gmail.com</a><br>
+                <strong>Phone</strong>: <a onclick="window.open('tel:+9779808937541', '_blank')">+977-9808937541</a>
+            </p>
+            <p>
+                <strong>Address:</strong><br>
+                <em>
+                    Address Line 1: Balaju, Kathmandu<br>City: Kathmandu<br>Province: Bagmati Pradesh<br>ZIP Code: 44600<br>Country: <img
+                        src="./assets/img/extra/country.png"
+                        style="width:12px;height:12px;filter: drop-shadow(2px 2px 2px black);"> Nepal
+                </em>
+            </p>
+            <hr size=1>
+            <h3 class="elements-heading">Find Me on Social Media!</h3>
+            <ul>
+                <li><strong>Facebook</strong>: <a
+                        onclick="window.open('https://www.facebook.com/wiz.virtual', '_blank')">Virtual Wiz</a></li>
+                <li><strong>Twitter</strong>: <a onclick="window.open('https://twitter.com/virtualwiz1', '_blank')">Virtual Wiz</a></li>
+                <li><strong>GitHub</strong>: <a
+                        onclick="window.open('https://github.com/virtualwiz1/', '_blank')">Virtual Wiz</a></li>
+                <li><strong>Telegram</strong>: <a
+                        onclick="window.open('https://t.me/virtualwiz1', '_blank')">@virtualwiz1</a></li>
+                <li><strong>Instagram</strong>: <a
+                        onclick="window.open('https://www.instagram.com/wizvirtal', '_blank')">Virtual Wiz</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/winbox.bundle.js"></script>
+</body>
+
+</html>
