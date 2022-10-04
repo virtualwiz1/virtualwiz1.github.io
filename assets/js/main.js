@@ -123,7 +123,7 @@ textEditor.addEventListener('click', () => {
         class: ["no-full", "modern"],
         background: "#8754ff",
         border: 2,
-        url: "github1s.com/virtualwiz1/virtualwiz1.github.io/=",
+        url: "github1s.com/virtualwiz1/virtualwiz1",
         x: Math.floor(Math.random() * 10)+"%",
         y: Math.floor(Math.random() * 10)+"%",
         width: "80%",
